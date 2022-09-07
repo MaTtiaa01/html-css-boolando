@@ -20,16 +20,18 @@
 /* #region utilities */
 
 .container{
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
 .row{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col_4{
     width: calc((100% / 12) * 4);
+    
 }
 
 
@@ -50,6 +52,7 @@
     background-color: var(--bz-header);
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 header a{
     text-decoration: none;
@@ -112,3 +115,38 @@ header a{
     text-decoration: line-through;
  }
 /* #endregion main */
+
+
+/* #region footer */
+footer{
+    background-color: var(--bz-dark);
+    color: var(--bz-lighter);
+}
+footer .row{
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--bz-lighter);
+    font-size: 10px;
+    margin-right: 5px;
+}
+footer a:hover{
+    font-weight: bold;
+}
+#c_name{
+    font-size: 15px;
+    font-weight: bold;
+}
+footer i{
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+#find_us{
+    font-size: 10px ;
+}
+/* #endregion footer */
